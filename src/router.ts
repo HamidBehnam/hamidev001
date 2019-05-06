@@ -26,7 +26,7 @@ export default new Router({
       path: "/organizations",
       name: "organizations",
       component: () => 
-        import("@/pages/organizations/organizations.vue")
+        import(/* webpackChunkName: "organizations" */ "@/pages/organizations/organizations.vue")
     }
   ]
 });
